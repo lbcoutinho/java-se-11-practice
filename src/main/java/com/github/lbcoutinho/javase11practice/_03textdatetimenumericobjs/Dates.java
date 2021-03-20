@@ -27,16 +27,16 @@ public class Dates {
 		Period p = Period.between(ld, ld2);
 		System.out.println("period = " + p);
 
-		var z1 = ZoneId.of("America/Los_Angeles");
+		ZoneId z1 = ZoneId.of("America/Los_Angeles");
 		System.out.println("z1 = " + z1);
-		var z2 = ZoneId.of("GMT+2");
+		ZoneId z2 = ZoneId.of("GMT+2");
 		System.out.println("z2 = " + z2);
-		var z3 = ZoneId.of("UTC-05:00");
+		ZoneId z3 = ZoneId.of("UTC-05:00");
 		System.out.println("z3 = " + z3);
-		var z4 = ZoneId.systemDefault();
+		ZoneId z4 = ZoneId.systemDefault();
 		System.out.println("z4 = " + z4);
-		var londonZone = ZoneId.of("Europe/London");
-		var laZone = ZoneId.of("America/Los_Angeles");
+		ZoneId londonZone = ZoneId.of("Europe/London");
+		ZoneId laZone = ZoneId.of("America/Los_Angeles");
 		LocalDateTime someTime = LocalDateTime.of(2019, 5, 1, 12,30,25);
 		System.out.println("someTime = " + someTime);
 		ZonedDateTime londonTime = ZonedDateTime.of(someTime, londonZone);

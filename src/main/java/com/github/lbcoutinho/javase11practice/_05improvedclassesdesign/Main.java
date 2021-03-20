@@ -12,7 +12,7 @@ public class Main {
 		 */
 
 		// Not possible to instantiate enums via constructor - compilation error
-//		var demoEnum = new DemoEnum("3");
+//		DemoEnum demoEnum = new DemoEnum("3");
 
 		// Java memory allocation
 		/*
@@ -27,7 +27,7 @@ public class Main {
 		int b = 0;
 		incInt(b);
 		System.out.println("b = " + b);
-		var c = new Demo();
+		Demo c = new Demo();
 		setValue(c);
 		System.out.println("c = " + c.getValue());
 		/*

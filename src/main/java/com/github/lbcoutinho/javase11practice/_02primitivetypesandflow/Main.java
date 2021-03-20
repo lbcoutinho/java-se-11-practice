@@ -21,12 +21,12 @@ public class Main {
 		/*
 		Operators precedence
 		 */
-		var ten = 10;
+		int ten = 10;
 		System.out.println("ten = " + ten);
-		var val1 = ++ten;
+		int val1 = ++ten;
 		System.out.println("val1 = " + val1);
 		System.out.println("ten = " + ten);
-		var val2 = ten++;
+		int val2 = ten++;
 		System.out.println("val2 = " + val2);
 		System.out.println("ten = " + ten);
 
@@ -36,7 +36,7 @@ public class Main {
 		byte b1 = 127, b2 = 5;
 		byte b3 = (byte) (b1 +b2);
 		System.out.println("b3 = " + b3); // value = -124 because the operation overflow the byte type size and the cast is enforcing the type
-		var b4 = b1 +b2;
+		int b4 = b1 +b2;
 		System.out.println("b4 = " + b4); // value = 132 (correct), the compiler automatically convert the type byte to int to avoid overflow
 		/*git
 		The resulting type of arithmetic operations on types smaller than int is an int;
